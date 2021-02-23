@@ -5,7 +5,7 @@ class handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
     content_len = int(self.headers.get('Content-Length'))
-    name = self.rfile.read(content_len)
+    name = self.rfile.read(4)
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
