@@ -6,9 +6,9 @@ class handler(BaseHTTPRequestHandler):
     self.name = "kalb"
   
 
-  def do_POST(self):
-    content_len = int(self.headers.get('Content-Length'))
-    self.name = self.rfile.read(content_len)
+  # def do_POST(self):
+  #   content_len = int(self.headers.get('Content-Length'))
+  #   self.name = self.rfile.read(content_len)
 
 
   def do_GET(self):
