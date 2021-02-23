@@ -22,7 +22,7 @@
 					500 internal server error
 			*/
 			
-			function hello(param) {
+			function yes() {
 				xmlHttp=GetXmlHttpObject();
 				if (xmlHttp==null) {
 					 alert ("Browser does not support HTTP Request");
@@ -68,7 +68,11 @@
 				return xmlHttp;
 			}
 			</script>
-		<h1>SexiSexcloth off!<h1>
+		<form name="myForm">
+			Name: <input type="text" name="username1" /> 
+			<input type="button" value="Press me" onclick="hello(document.myForm.username1.value)"; />
+			<br/>
+		</form>
 		<p>Sometimes I just wanna cry :')</p>
 	</body>
 </html>
