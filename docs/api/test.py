@@ -3,9 +3,10 @@ from datetime import datetime
 
 class handler(BaseHTTPRequestHandler):
 
-  def do_GET(self):
+  def do_GET(self, name):
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
-    self.wfile.write("Yoooooo wasssup my GGGGGG!!! :D".encode())
+    string = "Yoooo how's it going " + name + ". U suck!"
+    self.wfile.write(string.encode())
     return
