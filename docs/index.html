@@ -33,7 +33,7 @@
 				// url=url+"?name=" + param;
 				xmlHttp.onreadystatechange=stateChanged ;
 				xmlHttp.open("GET",url,true); // arg1=GET/POST, arg2=url, arg3=isAsynchronous
-				xmlHttp.send("Kalb"); // null is replaced with the body of POST
+				xmlHttp.send(null); // null is replaced with the body of POST
 			}
 			
 			
