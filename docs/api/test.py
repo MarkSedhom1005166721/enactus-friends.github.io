@@ -2,9 +2,6 @@ from http.server import BaseHTTPRequestHandler
 from datetime import datetime
 
 class handler(BaseHTTPRequestHandler):
-  # def __init__(self):
-  #   self.name = "kalb"
-  
 
   # def do_POST(self):
   #   content_len = int(self.headers.get('Content-Length'))
@@ -17,5 +14,5 @@ class handler(BaseHTTPRequestHandler):
     self.end_headers()
     name = "kalb"
     string = "Yoooo how's it going " + name + ". U suck!"
-    self.wfile.write(string.encode())
+    self.wfile.write(self.responses.encode())
     return 
